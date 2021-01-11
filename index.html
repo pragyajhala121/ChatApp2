@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice-P</title>
+<style>
+input[type=text] {
+  width: 100px;
+  -webkit-transition: width .35s ease-in-out;
+  background-color: rgb(255, 121, 237);
+  transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 250px;
+  background-color: rgb(255, 182, 222);
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+	
+	<h1>Practice Project</h1>
+
+		<div class="form-group">
+		  <label >User Name:</label>
+          <input type="text" class="form-control" id="user_name" placeholder="User Name">
+		</div>
+
+		<button class="btn btn-warning" onclick="addUser()">Add User Name</button>
+
+</div>
+
+</body>
+</html>
